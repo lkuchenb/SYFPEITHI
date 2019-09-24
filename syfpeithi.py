@@ -30,15 +30,17 @@
 import argparse
 import sys
 
-from Fred2.Core import Allele, Peptide
-from Fred2.EpitopePrediction import EpitopePredictorFactory
-
 ####################################################################################################
 
 parser = argparse.ArgumentParser('SYFPEITHI')
 parser.add_argument('-p', '--peptides', metavar='path', type = argparse.FileType('r'), default = sys.stdin, help = 'Path to peptide list. Default: stdin')
 parser.add_argument('alleles', metavar='allele', nargs = '+',  type = str, help = 'HLA alleles to predict against.')
 args = parser.parse_args()
+
+####################################################################################################
+
+from Fred2.Core import Allele, Peptide
+from Fred2.EpitopePrediction import EpitopePredictorFactory
 
 ####################################################################################################
 
