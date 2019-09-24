@@ -79,7 +79,7 @@ max_score_by_allele = {
     }
 
 # Run predictions and output results
-print 'peptide_sequence\tallele\traw_score\tnorm_score'
+print 'Peptide\tAllele\tSyfpeithiRawScore\tSyfpeithiNormScore'
 for pep_len, peptides in peptides_by_length.items():
     for allele in alleles:
         if (allele, pep_len) in max_score_by_allele and max_score_by_allele[allele, pep_len]:
