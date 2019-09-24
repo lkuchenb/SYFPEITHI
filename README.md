@@ -10,7 +10,7 @@ For setups with alternative paths for the virtual environment or python script, 
 
 ## Usage
 
-Give a plain text file with peptides and a list of candidate HLA alleles, a table with four columns representing
+Give a plain text file with peptides and a list of candidate HLA alleles, a TAB separated file with four columns representing
 
 * The peptide sequence
 * The HLA allele
