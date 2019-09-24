@@ -20,7 +20,7 @@ Give a plain text file with peptides and a list of candidate HLA alleles, a tabl
 can be obtained by invoking
 
 ```
-$ syfpeithi -p /tmp/mypeptides 'HLA-A*11:01' 'HLA-A*02:01' | column -t -s'      '
+$ syfpeithi -p /tmp/mypeptides 'HLA-A*11:01' 'HLA-A*02:01'
 Using TensorFlow backend.
 Peptide      Allele       SyfpeithiRawScore  SyfpeithiNormScore
 YSKNLVTE     HLA-A*11:01  NA                 NA
